@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<meta name="description" content="Strona o mnie">
+<title>Pierwsza strona</title>
+<head>
+<meta charset="utf-8">
+<title>Zewnętrzny arkusz stylów &lt;link "stylesheet"&gt; @charset - Wstawianie stylów CSS - Kurs CSS dla zielonych</title>
+<style>
+/* SELEKTORY: */
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+color: #006192;
+background-color: pink;
+margin: 6mm;
+}
+
+p {
+text-align: justify;
+}
+
+pre, code {
+font-size: 8pt;
+}
+</style>
+<h2>Strona domowa</h2>
+<hr />
+<h2>Dane</h2>
+<tr>
+<td>
+<p><span>Imię i Nazwisko:</span> Oliwia Bulasińska </p>
+<p><span>Zawód:</span> student </p>
+<p><span>Miejsce zamieszkania:</span> Płock
+</td>
+<td>
+<img src ="kot.jpg" alt="kot">
+</td>
+</tr>
+</table>
+<hr />
+<h2 style=>Plan</h2>
+<table border= "1" cellspacing="0" cellpadding="4">
+<tr alihn="center">
+<th>Poniedziałek</th> <th>Wtorek</th> <th>Środa</th> <th>Czwartek</th> <th>Piątek</th> <th>Sobota</th> <th>Niedziela</th>
+</tr>
+<tr align="center">
+<td colspan="5">ZAJECIA<br>8<sup>00</sup>-18<sup>00</sup></td>
+<td>WOLNE</td>
+<td>WOLNE</td>
+</tr>
+</table>
+</center>
+<hr />
+<h2 >Zainteresowania</h2>
+<p><a href="https://pl.wikipedia.org/wiki/Grafika_komputerowa">1.Grafika komputerowa</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Lists_of_animated_films">2.Filmy animowane</a></p>
+<a href="https://www.youtube.com/@criticalrole">3.Critical Role</a>
+<hr />
+<h3>Formularz</h3>
+ <form>
+ <label for="imie">Imię:</label> <input type="text" id="imie" name="imie"><br>
+<label for="nazwisko">Nazwisko:</label> <input type="text" id="nazwisko" name="nazwisko"><br>
+
+<label for="email">Adres e-mail:</label> <input type="email" id="email" name="email"><br>
+
+<label for="password">Hasło:</label> <input type="password"  id="password" name="hasło">
+</form>
+
+<p>Płeć:
+<input type="radio" name="Płeć" value="Mężczyzna">M
+<input type="radio" name="Płeć" value="Kobieta">K
+
+<p>Wybór języka</p>
+<input type="checkbox" name="Język" value="Polski">Polski
+<input type="checkbox" name="Język" value="Angielski">Angielski
+<input type="checkbox" name="Język" value="Niemiecki">Niemiecki
+
+<p>Poziom umiejętności</p>
+<select name="Poziom" multiple size="3">
+<option selected>Początkujący</option>
+<option>Średnio zaawansowany</option>
+<option>Zaawansowany</option>
+<option>Ekspert</option>
+</select>
+
+<p>Ulubiony kolor</p>
+<select name="Kolor" multiple size="3">
+<option selected>różowy</option>
+<option>niebieskiy</option>
+<option>fioletowy</option>
+<option>zielony</option>
+    <option>żółty</option>
+    <option>czerwony</option>
+    <option>pomarańczowy</option>
+    <option>czarny</option>
+    <option>biały</option>
+</select>
+
+<p>Uwagi:</p>
+<textarea name="Uwagi" cols="50" rows="10">Proszę, wpisz tutaj jakąś uwagę...</textarea>
+<br><br><br>
+<input type="submit" value="Wyślij ">
+<input type="reset" value="Wyczyść ">
+</div></form>
+
+</form>
+
+<hr>
+<h3>DZISIEJSZA DATA</h3>
+<p style= "text-align:center; font-size:18px;">
+Dzisiaj jest:<span id="data"></span>
+</p>
+<script>
+let d = new Date();
+document.getElementById("data").innerText = d.toLocaleDateString();
+</script>
+
+
+<hr />
+
+</head>
+<body>
+</body>
+</html>
